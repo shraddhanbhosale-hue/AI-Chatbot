@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Local CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Remix Icon -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+</head>
+<body>
+
+    <div class="wrapper bg-[black] h-screen w-screen">
+
+        <!-- Sidebar -->
+            <div class="sidebar hidden absolute top-[0] left-[0] bg-[black] h-screen w-[70%] flex align-itens-center justify-between px-4 py-5 border-r-[1px] border-gray-600 z-20">
+                <i class="ri-speak-fill text-[20px] text-[white] "></i>
+                <i class="cross ri-close-large-line text-[20px] text-[white]"></i>
+            </div>
+
+        <!-- Navbar -->
+        <div class="navbar h-[9vh] w-full flex align-items-center justify-center p-4 ">
+
+            <!-- Left-navbar -->
+            <div class="left-nav h-full w-[50%] flex align-items--center justify-start gap-[20px]  py-2">
+                <i class=" menu ri-align-left text-[22px] text-[white] "></i>
+                <h1 class="text-[20px] font-normal text-white font-medium">Velora AI</h1>
+            </div>
+
+            <!-- Right-navbar -->
+            <div class="right-nav h-full w-[50%] flex justify-end ">
+                <button class="bg-orange-50 text-back px-6 py-2 text-[18px] rounded-full flex justify-end font-semibold">Login</button>
+            </div>
+        </div>
+
+        <div class="message bg-[black] h-[78vh] w-full p-4 overflow-y-auto">
+            <!-- send msg -->
+            <div class="send-msg flex flex-col justify-end align-items-end  text-[white]">
+                <div class="flex justify-end text-[18px]">
+                    <h1 class="bg-[#212121] py-2 px-4 rounded-full w-[fit-content]  " >send</h1>
+                </div>
+
+                <div class="icons flex gap-[20px] flex justify-end text-[white] gap-[10px] p-2 ">
+                    <i class="ri-file-copy-line font-normal"></i>
+                    <i class="ri-pencil-fill "></i>
+                </div>
+            </div>
+
+            <!-- receive msg -->
+            <div class="receive-msg flex flex-col justify-start text-[20px] text-[white] w-full">
+                <div class="receive-cont">
+                    <h1 class="text-[18px]">receive</h1>
+                </div>
+                <div class="icons flex gap-[20px] flex justify-start text-[white] gap-[10px] py-2">
+                    <i class="ri-file-copy-line font-normal"></i>
+                    <i class="ri-thumb-up-line"></i>
+                    <i class="ri-thumb-down-line"></i>
+                    <i class="ri-upload-2-fill"></i>
+                    <i class="ri-loop-right-line"></i>
+                    <i class="ri-more-line"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="cont bg-[black] flex flex-col gap-[12px] text-[white] py-4 px-7 absolute top-[600px] ">
+            <button class="flex gap-[20px] text-[18px]"><i class="ri-image-ai-line"></i>Create an image</button>
+            <button class="flex gap-[20px] text-[18px]"><i class="ri-pencil-ai-fill"></i>Write or edit</button>
+            <button class="flex gap-[20px] text-[18px]"><i class="ri-global-line"></i>Look something up</button>
+        </div>
+
+
+        <!-- input -->
+        <div class="input-container h-[90vh] w-full flex align-items-center justify-center">
+
+            <i class="ri-add-large-fill absolute left-[28px] top-[767px] text-[26px] text-[white] rounded-full z-10"></i>
+
+            <input class="input bg-[#212121] absolute bottom-[20px] left-[0] w-full h-[9vh] text-white text-[20px] p-8 rounded-full focus:outline-none pl-[75px] pr-[70px] z-9"  type="text" placeholder="Ask anything..." >
+
+            <i class="sendBtn ri-send-ins-fill text-[white] absolute right-[25px] bottom-[35px] text-[30px] rounded-full z-10"></i>
+
+        </div>
+
+    </div>
+
+    
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+
+    <!-- <script src="gemini.js"></script> -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
